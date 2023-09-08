@@ -1,0 +1,65 @@
+// WAP to implement the class of circle
+
+#include <iostream>
+using namespace std;
+
+class Circle
+{
+    double radius;
+    const double PI = 3.14d;
+    public:
+        void setRadius(double);
+        double getRadius();
+        double getDiameter();
+        double getCircumference();
+        double getArea();
+};
+
+void Circle::setRadius(double radius)
+{
+    this-> radius = radius;
+}
+
+double Circle::getRadius()
+{
+    return radius;
+}
+
+double Circle::getDiameter()
+{
+    return 2*radius;
+}
+
+double Circle::getCircumference()
+{
+    return 2*PI*radius;
+}
+
+double Circle::getArea()
+{
+    return PI*radius*radius;
+}
+
+int main()
+{
+    Circle c1, c2;
+    
+    c1.setRadius(7.8);
+    c2.setRadius(4.3);
+    
+    cout<<endl<<"Circle 1";
+    cout<<endl<<"Radius : "<<c1.getRadius();
+    cout<<endl<<"Diameter : "<<c1.getDiameter();
+    cout<<endl<<"Circumference : "<<c1.getCircumference();
+    cout<<endl<<"Area : "<<c1.getArea();
+
+    cout<<endl;
+
+    cout<<endl<<"Circle 2";
+    cout<<endl<<"Radius : "<<c2.getRadius();
+    cout<<endl<<"Diameter : "<<c2.getDiameter();
+    cout<<endl<<"Circumference : "<<c2.getCircumference();
+    cout<<endl<<"Area : "<<c2.getArea();
+    
+    return 0;
+}
