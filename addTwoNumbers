@@ -1,0 +1,22 @@
+//WAP to add two numbers
+
+#include <stdio.h>
+
+void add()
+{
+    int a, b;
+    
+    printf("\n Addition Program \n");
+    
+    printf("\n Enter two number: ");
+    scanf("%d%d", &a, &b);
+    
+    printf("\n %d + %d = %d \n", a, b, a+b);
+}
+
+int main()
+{
+    add();
+    
+    return 0;
+}
