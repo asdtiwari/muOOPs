@@ -1,0 +1,80 @@
+// WAP to create the student class
+
+#include <iostream>
+using namespace std;
+
+class Student
+{
+    int rollNo;
+    string name;
+    float marks;
+    
+    public:
+        void setStudent(int rollNo, string name, float marks);
+        void setRollNo(int rollNo);
+        void setName(string name);
+        void setMarks(float marks);
+        int getRollNo();
+        string getName();
+        float getMarks();
+        void printStudent();
+};
+
+void Student::setStudent(int rollNo, string name, float marks)
+{
+    this->rollNo = rollNo;
+    this->name = name;
+    this->marks = marks;
+}
+
+void Student::setRollNo(int rollNo)
+{
+    this->rollNo = rollNo;
+}
+
+void Student::setName(string name)
+{
+    this->name = name;
+}
+
+void Student::setMarks(float Marks)
+{
+    this->marks = marks;
+}
+
+int Student::getRollNo()
+{
+    return rollNo;
+}
+
+string Student::getName()
+{
+    return name;
+}
+
+float Student::getMarks()
+{
+    return marks;
+}
+
+void Student::printStudent()
+{
+    cout<<endl<<"Student Details";
+    cout<<endl<<"RollNo : "<<rollNo;
+    cout<<endl<<"Name : "<<name;
+    cout<<endl<<"Marks : "<<marks;
+    cout<<endl;
+}
+
+int main()
+{
+    Student s1, s2;
+    
+    s1.setStudent(101, "Aditya Vyas", 9.8);
+    s1.printStudent();
+    
+    s2.setStudent(102, "Aditya Thakur", 9.9);
+    s2.printStudent();
+    
+    return 0;
+}
