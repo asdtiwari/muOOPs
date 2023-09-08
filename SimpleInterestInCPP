@@ -1,0 +1,31 @@
+// WAP to calculate the SI 
+
+#include <iostream>
+using namespace std;
+
+void simpleInterest()
+{
+    float principle, rate, timePeriod, si;
+    
+    cout<<endl<<"Simple Interest"<<endl;
+    
+    cout<<"Enter Principle amount: ";
+    cin>>principle;
+    
+    cout<<"Enter Rate: ";
+    cin>>rate;
+    
+    cout<<"Enter Time Period: ";
+    cin>>timePeriod;
+    
+    si = (principle * rate * timePeriod) / 100;
+    
+    cout<<"Amount: "<<si<<endl;
+}
+
+int main()
+{
+    simpleInterest();
+
+    return 0;
+}
