@@ -1,0 +1,26 @@
+//WAP to add two numbers using function with arg and return
+
+#include <iostream>
+
+using namespace std;
+
+int add(int, int);
+
+int main()
+{
+    int numb1, numb2;
+    
+    cout<<endl<<"Addition Program"<<endl;
+    
+    cout<<"Enter two numbers: ";
+    cin>>numb1>>numb2;
+    
+    cout<<numb1<<" + "<<numb2<<" = "<<add(numb1, numb2);
+    
+    return 0;
+}
+
+int add(int num1, int num2)
+{
+    return num1 + num2;
+}
