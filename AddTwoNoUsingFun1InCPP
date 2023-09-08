@@ -1,0 +1,40 @@
+//WAP to add two numbers using function
+
+// Inclusion of header file
+#include <iostream>
+
+// Definition of namespace
+using namespace std;
+
+//Declaration of function
+void addition();
+
+//Definition of main function
+int main()
+{
+    
+    //calling of function
+    addition();
+    
+    //returning the value
+    return 0;
+}
+
+// Definition of user defined function
+void addition()
+{
+    
+    //Declaration of local variables
+    int numb1, numb2;
+    
+    // Printing and appropriate message for the program
+    cout<<endl<<"Addition Program"<<endl;
+    
+    // Asking the input
+    cout<<"Enter two numbers: ";
+    cin>>numb1>>numb2;
+    
+    // Displaying the output 
+    cout<<numb1<<" + "<<numb2<<" = "<<numb1+numb2;
+}
+//End of program
